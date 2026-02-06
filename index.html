@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday 💛</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --pink:#ffb3c7;
+    --gold:#ffd98e;
+}
+
+body{
+    margin:0;
+    font-family:'Playfair Display', serif;
+    background:
+      radial-gradient(circle at top, rgba(255,179,199,0.25), transparent 60%),
+      linear-gradient(180deg,#0b1c24,#142f3c,#1f4657);
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+/* Floating hearts */
+.heart{
+    position:fixed;
+    bottom:-50px;
+    font-size:18px;
+    animation:floatUp 12s linear infinite;
+    opacity:0.4;
+}
+@keyframes floatUp{
+    from{ transform:translateY(0); }
+    to{ transform:translateY(-120vh); }
+}
+
+/* Header */
+header{
+    padding:90px 20px 70px;
+}
+h1{
+    font-size:2.6rem;
+    margin-bottom:15px;
+}
+.subtitle{
+    opacity:0.9;
+    font-size:1.15rem;
+    color:var(--gold);
+}
+
+/* Sections */
+.section{
+    max-width:900px;
+    margin:80px auto;
+    padding:0 20px;
+}
+.card{
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,0.15),
+        rgba(255,255,255,0.05)
+    );
+    border-radius:22px;
+    padding:40px;
+    line-height:1.8;
+    box-shadow:0 25px 60px rgba(0,0,0,0.4);
+    backdrop-filter:blur(8px);
+}
+
+/* Highlights */
+.highlight{
+    color:var(--pink);
+    font-weight:600;
+}
+
+/* Flipbook */
+.flipbook{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.flipbook img{
+    max-width:88%;
+    max-height:78vh;
+    border-radius:26px;
+    box-shadow:0 35px 90px rgba(0,0,0,0.6);
+    opacity:0;
+    transform: scale(0.9) rotate(-0.5deg);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.flipbook img.show{
+    opacity:1;
+    transform: scale(1) rotate(0deg);
+}
+
+/* Letter */
+.letter{
+    font-family:'Patrick Hand', cursive;
+    font-size:1.25rem;
+    letter-spacing:0.6px;
+    color:#fff4f8;
+}
+
+/* End message */
+.end-message{
+    font-size:2rem;
+    font-weight:600;
+    margin:120px auto 60px;
+    max-width:900px;
+    line-height:1.4;
+    color:var(--gold);
+}
+
+/* Buttons */
+.music-btn, .download-btn{
+    background:linear-gradient(135deg,var(--pink),var(--gold));
+    border:none;
+    color:#2b1b1b;
+    padding:14px 22px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+.music-btn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+}
+.download-btn{
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+<script>
+for(let i=0;i<12;i++){
+    const h=document.createElement('div');
+    h.className='heart';
+    h.style.left=Math.random()*100+'vw';
+    h.style.animationDuration=(8+Math.random()*8)+'s';
+    h.innerText='💛';
+    document.body.appendChild(h);
+}
+</script>
+
+<header>
+<h1>7 February 2000 ✨</h1>
+<div class="subtitle">The day the world quietly became brighter</div>
+</header>
+
+<div class="section">
+<div id="daysAlive" class="card"></div>
+</div>
+
+<div class="section">
+<div class="card">
+<h2>My love, as I see her</h2>
+<p>
+My love is someone who finds comfort in <span class="highlight">novels</span>,
+who carries a soft and patient heart for <span class="highlight">animals</span>,
+and who holds her <span class="highlight">family</span> close without hesitation.
+</p>
+<p>
+She reads to escape the noise of the world,
+sleeps to recharge her spirit,
+and cooks or bakes when she wants to give love without needing words.
+</p>
+<p>
+These details may seem small to others,
+but to me, they are what make her extraordinary.
+</p>
+</div>
+</div>
+
+<div class="section">
+<div class="card">
+<h2>The first time I saw my love</h2>
+<p>
+I thought she was the most beautiful girl I had ever laid eyes on.
+Not dramatically — but in the way that makes your thoughts go quiet.
+</p>
+<p>
+I remember my confidence disappearing,
+standing there and staring at her,
+knowing that nothing I said could ever capture what I felt.
+</p>
+</div>
+</div>
+
+<!-- Flipbook photos -->
+<div class="flipbook"><img src="photo1.jpg"></div>
+<div class="flipbook"><img src="photo2.jpg"></div>
+<div class="flipbook"><img src="photo3.jpg"></div>
+<div class="flipbook"><img src="photo4.jpg"></div>
+<div class="flipbook"><img src="photo5.jpg"></div>
+<div class="flipbook"><img src="photo6.jpg"></div>
+<div class="flipbook"><img src="photo7.jpg"></div>
+<div class="flipbook"><img src="photo8.jpg"></div>
+<div class="flipbook"><img src="photo9.jpg"></div>
+<div class="flipbook"><img src="photo10.jpg"></div>
+<div class="flipbook"><img src="photo11.jpg"></div>
+<div class="flipbook"><img src="photo12.jpg"></div>
+<div class="flipbook"><img src="photo13.jpg"></div>
+<div class="flipbook"><img src="photo14.jpg"></div>
+<div class="flipbook"><img src="photo15.jpg"></div>
+
+<div class="section">
+<div class="card letter">
+<h2>A note for you</h2>
+<p>
+Today is not about perfection or performance.
+It is about celebrating the person you are
+and the quiet, powerful light you bring into the lives around you.
+</p>
+<p>
+<!-- WRITE YOUR PERSONAL BIRTHDAY MESSAGE HERE -->
+</p>
+
+<button class="download-btn" onclick="window.print()">⬇️ Download memories</button>
+</div>
+</div>
+
+<div class="end-message">
+My life has been a better place because you are in it 🤍
+</div>
+
+<footer style="padding:50px 20px 80px; opacity:0.9;">
+Happy Birthday, my love 💛<br>
+You are deeply appreciated — today and always.
+</footer>
+
+<audio id="bgMusic" loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="playMusic()">🎵 Play music</button>
+
+<script>
+const birthDate = new Date("2000-02-07");
+const today = new Date();
+const diff = Math.floor((today - birthDate)/(1000*60*60*24));
+document.getElementById("daysAlive").innerText =
+`The world has been a better place for ${diff} days because you were born`;
+
+function playMusic(){
+    const music=document.getElementById("bgMusic");
+    music.volume=0.45;
+    music.play();
+}
+
+const photos=document.querySelectorAll(".flipbook img");
+const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{threshold:0.6});
+
+photos.forEach(photo=>observer.observe(photo));
+</script>
+
+</body>
+</html>
